@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    string ConvertirEnMayusculas(string valor)
+    {
+        return valor.ToUpper();
+    }
+    DateTime hoy = DateTime.Now;
+    var nombres = new List<string>(){};
+}
+
+
+<div class="text-center">
+
+    <!--ul>
+        @foreach (var nombre in nombres)
+        {
+            <li>@nombre</li>
+        }
+    </ul-->
+
+    @*<h1 class="display-4">Soy @ConvertirEnMayusculas(@Model.Nombre) (@Model.Edad)</h1>*@
+    <h1 class="display-4">Soy Jorge</h1>
+    @*<h5>@hoy.ToString("yyyy/MM/dd HH:mm:ss")</h5>*@
+
+@*    @if(@Model.Edad > 18)
+    {
+        <h4>Eres mayor de edad<button>Entrar</button></h4>
+    }
+    else
+    {
+        <h4>Eres menor de edad..Lárgate..!</h4>
+    }*@
+
+    <h2>Desarrollador Full Stack, especializado en soluciones .NET y Javascript</h2>
+
+    <img
+    id="foto"
+    src="~/images/foto.jpg" alt="Foto de Developer" />
+</div>
+
+<div class="text-center">
+    <img id="imagen-dotnet" src="~/images/dotnet-imagen.png" alt="dotnet" />
+</div>
+
+<div class="row justify-content-center text-center bg-primary">
+    <div class="col col-md-7 seccion-bienvenida">
+        <h1>Te doy la Bienvenida a mi portafolio</h1>
+        <p>Soy desarrollador senior de Software, empecé a programar de manera profesional desde el 2005.
+            He trabajado con tecnologías: .NET, NodeJS, PHP, Javascript, Python, etc.
+            He trabajado con Bases de Datos relacionales como: Oracle, SQL Server, Sybase, MySQL, y las no relacionales como: MongoDB y Firebase.
+        </p>
+    </div>
+</div>
